@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.count-down{
+    background-color: rgb(185, 185, 185);
+    height: 30px;
+}
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f3f3f3; /* Light gray like Microsoft */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100px;
+  }
+  
+  /* Logo Container */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Logo Image */
+  .logo-img {
+    width: 50px; /* Adjust for responsive design */
+    height: auto;
+    max-height: 50px; /* Ensures proportions */
+    object-fit: contain;
+  }
+  
+  /* Logo Text */
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #262626;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  /* Microsoft Logo Colors */
+  .home:hover { background-color: #F25022; color: white; } /* Red */
+  .team:hover { background-color: #7FBA00; color: white; } /* Green */
+  .events:hover { background-color: #00A4EF; color: white; } /* Blue */
+  .join:hover { background-color: #FFB900; color: white; } /* Yellow */
+  
+  /* Hover Effect */
+  .nav-links a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .logo-img {
+      width: 40px; /* Smaller on mobile */
+      max-height: 40px;
+    }
+  
+    .logo-text {
+      font-size: 1.2rem;
+    }
+  }
