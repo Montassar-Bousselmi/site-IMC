@@ -3,7 +3,7 @@
     padding: 0;
 }
 .count-down{
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(124, 123, 121);
     height: 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
@@ -13,35 +13,35 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f3f3f3; /* Light gray like Microsoft */
+    background-color: rgb(211, 208, 208);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100px;
   }
   
-  /* Logo Container */
+  
   .logo-container {
     display: flex;
     align-items: center;
     gap: 10px;
   }
   
-  /* Logo Image */
+  
   .logo-img {
-    width: 50px; /* Adjust for responsive design */
+    width: 50px;
     height: auto;
-    max-height: 50px; /* Ensures proportions */
+    max-height: 50px;
     object-fit: contain;
   }
   
-  /* Logo Text */
+ 
   .logo-text {
     font-size: 1.5rem;
     font-weight: bold;
     color: #262626;
   }
   
-  /* Navigation Links */
+  
   .nav-links {
     list-style: none;
     display: flex;
@@ -61,41 +61,19 @@
     font-weight: 500;
   }
   
-  /* Microsoft Logo Colors */
-  .home:hover { background-color: #F25022; color: white; } /* Red */
-  .team:hover { background-color: #7FBA00; color: white; } /* Green */
-  .events:hover { background-color: #00A4EF; color: white; } /* Blue */
-  .join:hover { background-color: #FFB900; color: white; } /* Yellow */
+  .home:hover { background-color: #F25022; color: white; } 
+  .team:hover { background-color: #7FBA00; color: white; } 
+  .events:hover { background-color: #00A4EF; color: white; } 
+  .join:hover { background-color: #FFB900; color: white; } 
   
-  /* Hover Effect */
+ 
   .nav-links a:hover {
     opacity: 0.8;
   }
   
-  /* Responsive */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-links {
-      flex-direction: column;
-      gap: 10px;
-    }
-  
-    .logo-img {
-      width: 40px; /* Smaller on mobile */
-      max-height: 40px;
-    }
-  
-    .logo-text {
-      font-size: 1.2rem;
-    }
-  }
+
   .welcome{
     height: 500px;
-    border-radius:10px ;
     background-image: url('components\back-img.JPG');
     display: flex;
     justify-content: center;
@@ -108,7 +86,6 @@
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(255, 255, 255) ;
     font-weight: bold;
-    
   }
   .btn-container {
     text-align: center;
@@ -125,4 +102,31 @@
   }
 .join-btn:hover{
   background-color: #2980b9;
+}
+.partner{
+  display: flex;
+}
+.about{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(211, 208, 208);
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+}
+.about div{
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 50px;
+  width: 80%;
+  background-color:rgb(248, 248, 248);
+  border:2px solid #00A4EF;
+}
+.about p{
+  width: 40%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
 }
