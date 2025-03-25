@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 .count-down{
     background-color: rgb(124, 123, 121);
@@ -13,10 +18,11 @@
     justify-content: space-around;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgb(211, 208, 208);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100px;
+    position: fixed;
+    width: 100%;
   }
   
   
@@ -32,9 +38,11 @@
     height: auto;
     max-height: 50px;
     object-fit: contain;
+    transition: all 0.3s ease-in-out;
   }
-  
- 
+  .logo-img:hover{
+    transform: scale(1.1);
+  }
   .logo-text {
     font-size: 1.5rem;
     font-weight: bold;
@@ -74,7 +82,7 @@
 
   .welcome{
     height: 500px;
-    background-image: url('components\back-img.JPG');
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,9 +94,19 @@
     font-family: Arial, Helvetica, sans-serif;
     color:rgb(255, 255, 255) ;
     font-weight: bold;
+    transition: all 0.3s ease-in-out;
   }
+  .welcome-title:hover{
+    color: #00A4EF;
+  }
+
   .btn-container {
     text-align: center;
+}
+.container{
+  background-image: url('https://github.com/Montassar-Bousselmi/site-IMC/blob/main/public/components/back-img.JPG');
+  background-size: cover;
+
 }
 .join-btn{
    background-color: #3498db;
@@ -103,14 +121,10 @@
 .join-btn:hover{
   background-color: #2980b9;
 }
-.partner{
-  display: flex;
-}
 .about{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgb(211, 208, 208);
   padding-top: 80px;
   padding-bottom: 80px;
 
@@ -122,7 +136,7 @@
   justify-content: space-evenly;
   border-radius: 50px;
   width: 80%;
-  background-color:rgb(248, 248, 248);
+  background-color:rgba(248, 248, 248,0.8);
   border:2px solid #00A4EF;
 }
 .about p{
@@ -130,3 +144,79 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: larger;
 }
+.pimg{
+  transition: all 0.3s ease-in-out;
+}
+.pimg:hover{
+  transform: scale(1.1);
+}
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.service-card {
+  
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #00A4EF;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.service-card.selected {
+  
+  background-color: #e0f7fa;
+  z-index: 1;
+}
+.service-title{
+  text-align: center;
+  padding: 50px;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.service-card {
+    cursor: pointer;
+    padding: 15px;
+    border: 2px solid #ccc;
+    transition: color 0.1s ease-in-out;
+    min-width: 200px;
+    text-align: center;
+}
+.service-card:hover{
+  background-color: #cae4ff;
+}
+
+.service-card.selected {
+    transform: scale(1.1);
+    background-color: #cae4ff;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+

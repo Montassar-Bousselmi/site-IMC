@@ -3,7 +3,7 @@ function Nav(){
     return(
         <nav className="navbar">
       <div className="logo-container">
-        <img src='src\components\logo.png' alt="IMC Logo" className="logo-img" />
+        <img src='public\components\logo.png' alt="IMC Logo" className="logo-img" />
         <span className="logo-text">ISAMM Microsoft Club</span>
       </div>
       <ul className="nav-links">
@@ -13,6 +13,7 @@ function Nav(){
         <li><a href="#join" className="join">Join</a></li>
       </ul>
     </nav>
+    
     )
 }
 export default Nav
