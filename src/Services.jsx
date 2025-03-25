@@ -1,21 +1,21 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import './App.css';
 
 const services = [
     {
         title: "Technical Workshops",
-        image: "./workshops.png",
+        image: "https://github.com/Montassar-Bousselmi/site-IMC/blob/48826d096587c9998cd0d78d8c9854dd9e990c8c/public/components/workshops.png?raw=true",
         description: "Professional web development services to build modern and responsive websites."
     },
     {
         title: "Training Programs",
-        image: "components\training.png",
+        image: "https://github.com/Montassar-Bousselmi/site-IMC/blob/48826d096587c9998cd0d78d8c9854dd9e990c8c/public/components/training.png?raw=true",
         description: "Creative graphic design solutions for branding, marketing, and digital presence."
     },
     {
         title: "Consulting Services",
-        image: "components\consulting.png",
+        image: "https://github.com/Montassar-Bousselmi/site-IMC/blob/48826d096587c9998cd0d78d8c9854dd9e990c8c/public/components/consulting.png?raw=true",
         description: "Enhance your website’s visibility with expert SEO strategies and analytics."
     }
 ];
@@ -39,7 +39,7 @@ function Services() {
 
     return (
         <div>
-            <h2>Services</h2>
+            <h2 className='s'>Services</h2>
             <div className="services-container">
                 <AnimatePresence mode="popLayout">
                     {reorderedServices.map((service, index) => (

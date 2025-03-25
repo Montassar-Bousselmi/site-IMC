@@ -104,7 +104,7 @@ a{
     text-align: center;
 }
 .container{
-  background-image: url('https://github.com/Montassar-Bousselmi/site-IMC/blob/main/public/components/back-img.JPG');
+  background-image: url('https://github.com/Montassar-Bousselmi/site-IMC/blob/main/public/components/back-img.JPG?raw=true');
   background-size: cover;
 
 }
@@ -159,26 +159,25 @@ a{
 }
 
 .service-card {
-  
   text-align: center;
   cursor: pointer;
   border: 1px solid #00A4EF;
   padding: 20px;
   border-radius: 10px;
   background-color: #f8f8f8;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .service-card img {
-  width: 100%;
   height: auto;
   max-height: 150px;
   object-fit: cover;
   margin-bottom: 10px;
 }
+.service-card:hover {
+  background-color: #e0f7fa;
+}
 
 .service-card.selected {
-  
   background-color: #e0f7fa;
   z-index: 1;
 }
@@ -187,36 +186,21 @@ a{
   padding: 50px;
 }
 .services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    overflow: hidden;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
 }
-
-.service-card {
-    cursor: pointer;
-    padding: 15px;
-    border: 2px solid #ccc;
-    transition: color 0.1s ease-in-out;
-    min-width: 200px;
-    text-align: center;
+.service-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
 }
-.service-card:hover{
-  background-color: #cae4ff;
+.s{
+  text-align: center;
+  padding: 30px;
 }
-
-.service-card.selected {
-    transform: scale(1.1);
-    background-color: #cae4ff;
+.service-card p {
+  font-size: 0.9rem;
+  color: #555;
 }
-.services-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    overflow: hidden;
-    width: 100%;
-}
-
