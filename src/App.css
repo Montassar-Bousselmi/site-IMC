@@ -150,6 +150,9 @@ a{
 .pimg:hover{
   transform: scale(1.1);
 }
+.services-container{
+  background-image: ;
+}
 .services {
   display: flex;
   justify-content: center;

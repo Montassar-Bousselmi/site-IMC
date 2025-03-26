@@ -11,8 +11,8 @@ function App() {
       <Nav />
       <CountDown />
       <Home />
-      <Join />
       <Services />
+      <Join />
       
     </main>
   )
