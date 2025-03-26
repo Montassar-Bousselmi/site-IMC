@@ -2,7 +2,8 @@ import './App.css'
 import Nav from './Nav'
 import CountDown from './CountDown'
 import Home from './Home'
-import Services from './services'
+import Services from './Services'
+import Join from './Join'
 function App() {
   
   return(
@@ -10,7 +11,9 @@ function App() {
       <Nav />
       <CountDown />
       <Home />
+      <Join />
       <Services />
+      
     </main>
   )
 }

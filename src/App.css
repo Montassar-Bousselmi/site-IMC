@@ -204,3 +204,51 @@ a{
   font-size: 0.9rem;
   color: #555;
 }
+.join-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.join-title{
+  text-align: center;
+  margin-top: 30px;
+}
+.form{
+  width: 80%;
+  height: 500px;
+  border-radius: 15px;
+  border: #00A4EF 2px solid;
+  background-color: #f8f8f8;
+}
+.form input{
+  width: 80%;
+  padding: 15px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 5px;
+  border: #00A4EF 1px solid;
+}
+.form textarea{
+  width: 80%;
+  padding: 15px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 5px;
+  border: #00A4EF 1px solid;
+}
+.form button{
+  width: 80%;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  border: #00A4EF 1px solid;
+  background-color: #00A4EF;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.form button:hover{
+  background-color: #7FBA00;
+}
